@@ -1,0 +1,8 @@
+RESULTS FOR ng_spotify_search
+	ng_search::FAILED::1366::null
+RESULTS FOR RG_Search_Muse_on_US
+	Search_muse::OK::1716::null
+RESULTS FOR RG_Search_Gorillaz_on_US
+	SearchGorillaz::OK::1718::null
+RESULTS FOR search_use_for_testing
+	SearchGorillaz::OK::1559::null

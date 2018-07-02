@@ -1,0 +1,18 @@
+{
+"prod": {
+"SPOTIFY_CLIENT_ID": "099e888dad274f0ab0f81943f2f68a50",
+"SPOTIFY_CLIENT_SECRET": "15350757d3e64cd4bd579050de8da0a0",
+"SPOTIFY_GRANT_TYPE": "client_credentials",
+"SPOTIFY_REST_URL": "https://api.spotify.com",
+"SPOTIFY_ACCOUNT_URL": "https://accounts.spotify.com",
+"SPOTIFY_USER_TOKEN": "5jNhwx6i9u9m09boYfrsZEA1yIGV5OiC2NxcK3nJYDbkZwTnLAz_vceS7uHFWZSJDAeCeS0du9l8mXvXx4NqY_Sxw"
+},
+"staging": {
+"SPOTIFY_CLIENT_ID": "099e888dad274f0ab0f81943f2f68a50",
+"SPOTIFY_CLIENT_SECRET": "15350757d3e64cd4bd579050de8da0a0",
+"SPOTIFY_GRANT_TYPE": "client_credentials",
+"SPOTIFY_REST_URL": "https://api-staging.spotify.com",
+"SPOTIFY_ACCOUNT_URL": "https://accounts-staging.spotify.com",
+"SPOTIFY_USER_TOKEN": "5jNhwx6i9u9m09boYfrsZEA1yIGV5OiC2NxcK3nJYDbkZwTnLAz_vceS7uHFWZSJDAeCeS0du9l8mXvXx4NqY_Sxw"
+}
+}

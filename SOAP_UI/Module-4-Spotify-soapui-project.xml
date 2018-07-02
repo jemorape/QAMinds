@@ -1,0 +1,1475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="bfa8be51-b159-45ff-b756-1f06c1dc81a6" activeEnvironment="Default" name="Module_4_Spotify" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="2ff4dd2b-69e3-4701-bdf7-9d042bb927a7" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://accounts.spotify.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://accounts.spotify.com</con:endpoint></con:endpoints><con:resource name="Token" path="/api/token" id="741effdd-2b57-40c3-805c-293b987487b5"><con:settings/><con:parameters><con:parameter><con:name>grant_type</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Token 1" id="eea7bd88-ae49-4332-b69a-0e7d47d16390" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:tok="https://accounts.spotify.com/api/token">tok:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/x-www-form-urlencoded</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="e9be1a92-b12d-4417-9ff7-7b29652a61af" mediaType="application/x-www-form-urlencoded" postQueryString="true"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://accounts.spotify.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="grant_type" value="client_credentials" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>grant_type</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="fd96eb56-bb08-477d-90ab-19620a82db38" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://api.spotify.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://api.spotify.com</con:endpoint></con:endpoints><con:resource name="Search" path="/v1/search" id="40509030-7d09-404e-a924-60e79570028f"><con:settings/><con:parameters><con:parameter><con:name>q</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>type</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>market</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>limit</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>offset</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Search 1" id="677b0b0a-444e-4454-bf0d-ca5d04eb246b" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>400</con:status><con:params/><con:element xmlns:sear="https://api.spotify.com/v1/search">sear:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:sear="https://api.spotify.com/v1/search">sear:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>401</con:status><con:params/><con:element xmlns:sear="https://api.spotify.com/v1/search">sear:Fault</con:element></con:representation><con:request name="Request 1" id="8819a4a8-2a9d-49f7-b294-1b27810d9ae3" mediaType="application/json"><con:settings/><con:endpoint>https://api.spotify.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>q</con:entry><con:entry>type</con:entry><con:entry>market</con:entry><con:entry>limit</con:entry><con:entry>offset</con:entry></con:parameterOrder></con:request></con:method></con:resource><con:resource name="Artist" path="/v1/artists/{id}" id="379d8773-376d-47dc-ad24-aa4995907e12"><con:settings/><con:parameters><con:parameter><con:name>id</con:name><con:value>id</con:value><con:style>TEMPLATE</con:style><con:default>id</con:default></con:parameter></con:parameters><con:method name="Method 1" id="31a88efd-3e4f-41d6-9932-e491555cf153" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>400</con:status><con:params/><con:element xmlns:id="https://api.spotify.com/v1/artists/id">id:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:id="https://api.spotify.com/v1/artists/id">id:Response</con:element></con:representation><con:request name="Request 1" id="bf265b5f-66a9-42a6-af06-c358cb69cdb2" mediaType="application/json"><con:settings/><con:endpoint>https://api.spotify.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="albums" path="/v1/artists/{id}/albums" id="1396bedd-2c63-456f-962d-e8a8932bb983"><con:settings/><con:parameters><con:parameter><con:name>id</con:name><con:value>id</con:value><con:style>TEMPLATE</con:style><con:default>id</con:default></con:parameter></con:parameters><con:method name="Method 1" id="36f836a4-ca1d-4bec-b7f2-804ddb10ca4c" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:id="https://api.spotify.com/v1/artists/id">id:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>401</con:status><con:params/><con:element xmlns:alb="https://api.spotify.com/v1/artists/id/albums">alb:Fault</con:element></con:representation><con:request name="Request 1" id="ef155b9b-d8e0-48d6-99a3-48e15e5ed6cd" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.spotify.com</con:endpoint><con:request/><con:originalUri>https://api.spotify.com/v1/artists/id/albums</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="me" path="/v1/me" id="8811be01-a57a-4a51-9264-a8d74c35e9fd"><con:settings/><con:parameters/><con:method name="Method 1" id="63749dc8-760e-4af2-93bb-003db2a154da" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>401</con:status><con:params/><con:element xmlns:me="https://api.spotify.com/v1/me">me:Fault</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>401</con:status><con:params/><con:element xmlns:me="https://api.spotify.com/v1/me">me:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:me="https://api.spotify.com/v1/me">me:Response</con:element></con:representation><con:request name="Request 1" id="7919ac0e-dad9-410e-b8e5-aba635ca5cb4" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.spotify.com</con:endpoint><con:request/><con:originalUri>https://api.spotify.com/v1/me</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="{user_id}" path="/v1/users/{user_id}" id="595e5a42-3c44-4018-9f44-3e38f21b38ed"><con:settings/><con:parameters><con:parameter><con:name>user_id</con:name><con:value>user_id</con:value><con:style>TEMPLATE</con:style><con:default>user_id</con:default></con:parameter></con:parameters><con:method name="Method 1" id="622d31ac-a5c4-4024-be6f-9dd0eb1d5e89" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>401</con:status><con:params/><con:element xmlns:user="https://api.spotify.com/v1/users/">user:Fault</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:user="https://api.spotify.com/v1/users/">user:Response</con:element></con:representation><con:request name="Request 1" id="5aede33b-a219-45e3-8d22-76ad6ca96898" mediaType="application/json"><con:settings/><con:endpoint>https://api.spotify.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="playlists" path="/v1/me/playlists" id="80f88abe-d49c-4a33-a782-5911c0bb962b"><con:settings/><con:parameters/><con:method name="Method 1" id="83cc20d0-2ed8-49f4-9823-e63ac6ca6cea" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:play="https://api.spotify.com/v1/me/playlists">play:Response</con:element></con:representation><con:request name="Request 1" id="664d2eca-4dd0-4a75-9373-a9a210301390" mediaType="application/json"><con:settings/><con:endpoint>https://api.spotify.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="{playlist_id}" path="/v1/users/{user_id}/playlists/{playlist_id}" id="3bd777e6-6a95-4fd0-ae77-8ea8e0c1f683"><con:settings/><con:parameters><con:parameter><con:name>user_id</con:name><con:value>user_id</con:value><con:style>TEMPLATE</con:style><con:default>user_id</con:default></con:parameter><con:parameter><con:name>playlist_id</con:name><con:value>playlist_id</con:value><con:style>TEMPLATE</con:style><con:default>playlist_id</con:default></con:parameter></con:parameters><con:method name="Method 1" id="de35f40a-28e8-482c-9e25-7a84a77cdc20" method="GET"><con:settings/><con:parameters/><con:request name="Request 1" id="e76508d6-60eb-468d-9bb7-d0f880c33d8c" mediaType="application/json"><con:settings/><con:endpoint>https://api.spotify.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="1a13ef4f-c9c0-4e00-a2dc-67008ddae9fb" name="Common" disabled="true"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="d0a3b39a-33a2-43e4-8c68-d4ea589ec6eb" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="request_spotify_client_credentials_token" searchProperties="true"><con:description>COMMON TEST CASES
+
+Test case request token using client credentials OAuth flow</con:description><con:settings/><con:testStep type="restrequest" name="request_token" id="bab9f922-43b8-4977-957e-4148f4bff6a6"><con:settings/><con:config service="https://accounts.spotify.com" resourcePath="/api/token" methodName="Token 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="request_token" id="8c405372-1722-457e-a52d-279e35369a34" mediaType="application/x-www-form-urlencoded" postQueryString="true"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${#Project#SPOTIFY_ACCOUNT_URL}</con:endpoint><con:request/><con:originalUri>https://accounts.spotify.com/api/token</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="b9a98b40-d7bb-47fd-a658-8324797c70b3" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="5f2a9868-304a-490b-bef4-3b385f1d2d90" name="Validate Token Type"><con:configuration><path>.token_type[0]</path><content>Bearer</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath RegEx Match" id="a73be0eb-4110-49d8-9ec1-9866f1fbf98f" name="JsonPath RegEx Match"><con:configuration><path>.access_token[0]</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx>.+</regEx></con:configuration></con:assertion><con:credentials><con:username>${#Project#SPOTIFY_CLIENT_ID}</con:username><con:password>${#Project#SPOTIFY_CLIENT_SECRET}</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="grant_type" value="${#Project#SPOTIFY_GRANT_TYPE}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>grant_type</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="transfer_token_to_tc" id="87750c5b-89b5-4396-960e-34e00be50b2a"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>token</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>request_token</con:sourceStep><con:sourcePath>.access_token[0]</con:sourcePath><con:targetType>token</con:targetType><con:targetStep>#TestCase#</con:targetStep><con:type>JSONPATH</con:type><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:properties><con:property><con:name>token</con:name><con:value>BQDA8SRCHdHOjZswJXoBx7TcDqhJ4Tzumtl3hDdD2vTx_jkbdIijID-Fp4hed08m4i0iHSx-7zQH3y5fBuQ</con:value></con:property></con:properties></con:testCase><con:testCase id="5a5d510f-e4b9-4104-9e2a-185e475b4809" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Spotify_search" searchProperties="true"><con:settings/><con:testStep type="calltestcase" name="request_token" id="aa4d8ff8-4e97-4f8d-bdbd-5bbffb3712a4"><con:settings/><con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:targetTestCase>d0a3b39a-33a2-43e4-8c68-d4ea589ec6eb</con:targetTestCase><con:properties><con:property><con:name>token</con:name><con:value>BQAUe3VSR0uE6t0FOx7_oCDmO-_7gMGpVgilx_sUGDmNx3KPMhvYXsT_mIgDLU_12Om6BUnf3g6kRwfBZu0</con:value></con:property></con:properties><con:returnProperties><con:entry>token</con:entry></con:returnProperties><con:runMode>PARALLELL</con:runMode></con:config></con:testStep><con:testStep type="restrequest" name="Search" id="13d7fc95-d14e-40cb-acaf-b11b8da7a7e9"><con:settings/><con:config service="https://api.spotify.com" resourcePath="/v1/search" methodName="Search 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Search" id="8819a4a8-2a9d-49f7-b294-1b27810d9ae3" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${request_token#token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#SPOTIFY_REST_URL}</con:endpoint><con:request/><con:originalUri>https://api.spotify.com/v1/search</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="4de8beba-4dd3-4756-a2d5-60d1aabdd45d" name="Valid HTTP Status Codes"><con:configuration><codes>${#TestCase#expectedStatusCode}</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="1ae1daa9-eeee-4f8b-bc8e-bcf7a9883b68" name="Script Assertion"><con:configuration><scriptText>log.info("Validate Response From Spotify Search")
+def headers = messageExchange.getResponseHeaders();
+log.info("Spotify Search - Header content: " + headers)
+log.info("Raw Status: " + headers["#status#"])
+def respStatus = headers["#status#"].toString().find("[0-9]{3}").toInteger()
+log.info("Resp Status: " + respStatus)
+assert respStatus ==200, "Invalid respomnse status " +respStatus
+
+def rawContent = messageExchange.getResponse().getResponseContent()
+log.info("Response Content" + rawContent);
+def jsonContent = new groovy.json.JsonSlurper().parseText(rawContent)
+log.info("JSON CONTENT:" +jsonContent)
+//assert JsonContent.artists.total == 205, "Invalid total number: " + jsonContent.artists.total</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="market" value="${#TestCase#market}"/>
+  <con:entry key="q" value="${#TestCase#q}"/>
+  <con:entry key="offset" value="${#TestCase#offset}"/>
+  <con:entry key="limit" value="${#TestCase#limit}"/>
+  <con:entry key="type" value="${#TestCase#type}"/>
+</con:parameters><con:parameterOrder><con:entry>q</con:entry><con:entry>type</con:entry><con:entry>market</con:entry><con:entry>limit</con:entry><con:entry>offset</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="TransferContent" id="84ddfcbe-943e-4056-a9e4-7a9ab228fe97"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>transferContent</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>Search</con:sourceStep><con:sourcePath/><con:targetType>responseContent</con:targetType><con:targetStep>#TestCase#</con:targetStep><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:properties><con:property><con:name>q</con:name><con:value>Gorillaz</con:value></con:property><con:property><con:name>type</con:name><con:value>artist</con:value></con:property><con:property><con:name>market</con:name><con:value>US</con:value></con:property><con:property><con:name>limit</con:name><con:value>10</con:value></con:property><con:property><con:name>offset</con:name><con:value>0</con:value></con:property><con:property><con:name>responseContent</con:name><con:value><![CDATA[{
+  "artists" : {
+    "href" : "https://api.spotify.com/v1/search?query=Gorillaz&type=artist&market=US&offset=0&limit=10",
+    "items" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3AA28KZvwAUcZuOKwyblJQ"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 2942142
+      },
+      "genres" : [ "alternative hip hop", "art pop" ],
+      "href" : "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ",
+      "id" : "3AA28KZvwAUcZuOKwyblJQ",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/fa3734a1c2e10634172434d45952da7bc1203bf0",
+        "width" : 640
+      }, {
+        "height" : 320,
+        "url" : "https://i.scdn.co/image/9bc913bf67b502baed6589d7984212a0e023918c",
+        "width" : 320
+      }, {
+        "height" : 160,
+        "url" : "https://i.scdn.co/image/8fcbb9905eaf86200fcc83687d48d36604350b98",
+        "width" : 160
+      } ],
+      "name" : "Gorillaz",
+      "popularity" : 81,
+      "type" : "artist",
+      "uri" : "spotify:artist:3AA28KZvwAUcZuOKwyblJQ"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/6PIDLFGrJZQfNSZB6lLVAs"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 116
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/6PIDLFGrJZQfNSZB6lLVAs",
+      "id" : "6PIDLFGrJZQfNSZB6lLVAs",
+      "images" : [ ],
+      "name" : "Gorillaz",
+      "popularity" : 10,
+      "type" : "artist",
+      "uri" : "spotify:artist:6PIDLFGrJZQfNSZB6lLVAs"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0AnzADJxsrc6Kgnv4AqwDw"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 305
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/0AnzADJxsrc6Kgnv4AqwDw",
+      "id" : "0AnzADJxsrc6Kgnv4AqwDw",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/5db561a7c08e70818084864be65a41416c35db87",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/767463b114a417943c62bb393139dd836e3bc529",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/68fdfe844839a51c6e164668316512076f13cf62",
+        "width" : 64
+      } ],
+      "name" : "Red Gorillaz",
+      "popularity" : 16,
+      "type" : "artist",
+      "uri" : "spotify:artist:0AnzADJxsrc6Kgnv4AqwDw"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3GkPA7jKwssNcCNF5tkYUf"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 452
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/3GkPA7jKwssNcCNF5tkYUf",
+      "id" : "3GkPA7jKwssNcCNF5tkYUf",
+      "images" : [ ],
+      "name" : "Gorillaz Featuring Daley",
+      "popularity" : 14,
+      "type" : "artist",
+      "uri" : "spotify:artist:3GkPA7jKwssNcCNF5tkYUf"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3hjp2GfGJGyjiplu9FPE1m"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 172
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/3hjp2GfGJGyjiplu9FPE1m",
+      "id" : "3hjp2GfGJGyjiplu9FPE1m",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/1df38d77ea82635a2d084761c3bd5208fd18d2f4",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/84d3dc4805d71b875b812f54ccf4b2b353d33dc3",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/da218f6d1717cd9545a62eea541824831ef05613",
+        "width" : 64
+      } ],
+      "name" : "Illa Gorillaz",
+      "popularity" : 1,
+      "type" : "artist",
+      "uri" : "spotify:artist:3hjp2GfGJGyjiplu9FPE1m"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/45WNgk9ahBlxT1cvT0rcH5"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 38
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/45WNgk9ahBlxT1cvT0rcH5",
+      "id" : "45WNgk9ahBlxT1cvT0rcH5",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/940a9ba1ff1336c065043e6054c740492c812216",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/b8b2cf02d9171042acce1897f303ebd99585d41f",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/5b5e4f2bb63925ad89de8a307f08b54a94c22268",
+        "width" : 64
+      } ],
+      "name" : "Untamed Gorillaz",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:45WNgk9ahBlxT1cvT0rcH5"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/13lvpAnM9chgENNOOvLECT"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 13
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/13lvpAnM9chgENNOOvLECT",
+      "id" : "13lvpAnM9chgENNOOvLECT",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/9690a4b84062b7497e2754e853096ce7a323fdbb",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/9a996a8b21022a37c2d805149230ad031a3d849a",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/b2bcee1dc4766950e07de5ef5f566b4fe30c2282",
+        "width" : 64
+      } ],
+      "name" : "Vanilla Gorillaz",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:13lvpAnM9chgENNOOvLECT"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/45ZlAYj33stOvxOBLlYDnK"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 11
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/45ZlAYj33stOvxOBLlYDnK",
+      "id" : "45ZlAYj33stOvxOBLlYDnK",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/35227b7a97e628e8524572786bda0cccb275e6b4",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/25bd8d7e049a509088429882507ef4564bc8c6e5",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/92b1b8e145384f249055647b4994346dc18b1f50",
+        "width" : 64
+      } ],
+      "name" : "Albino Gorillaz",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:45ZlAYj33stOvxOBLlYDnK"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4fjsFjUrcMsdHdobWU8BSh"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 20
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/4fjsFjUrcMsdHdobWU8BSh",
+      "id" : "4fjsFjUrcMsdHdobWU8BSh",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/92d220e5484ac30faff1f928430c70858df6dceb",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/316ce42ae609ca495f732fe1345afe50c36a5d49",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/98b52edefb0fb2e6b19914620d039cd6dfa47634",
+        "width" : 64
+      } ],
+      "name" : "Suluie Gorillaz",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:4fjsFjUrcMsdHdobWU8BSh"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4srvb5WHQsfDUaIkClivEY"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 3
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/4srvb5WHQsfDUaIkClivEY",
+      "id" : "4srvb5WHQsfDUaIkClivEY",
+      "images" : [ ],
+      "name" : "Pink Gorillaz",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:4srvb5WHQsfDUaIkClivEY"
+    } ],
+    "limit" : 10,
+    "next" : "https://api.spotify.com/v1/search?query=Gorillaz&type=artist&market=US&offset=10&limit=10",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 17
+  }
+}]]></con:value></con:property><con:property><con:name>expectedStatusCode</con:name><con:value>200,400</con:value></con:property><con:property><con:name>id</con:name><con:value/></con:property></con:properties></con:testCase><con:testCase id="8830ba76-9092-4676-ae37-f3aa6fb57c9a" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="sportify get artist" searchProperties="true"><con:description/><con:settings/><con:testStep type="calltestcase" name="request_token" id="ac21f5b0-a9c3-4af9-a398-affe1f2c4022"><con:settings/><con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:targetTestCase>d0a3b39a-33a2-43e4-8c68-d4ea589ec6eb</con:targetTestCase><con:properties><con:property><con:name>token</con:name><con:value>BQACJsG1a755-1L81GD7m6O1jaRGk4lIAYAfHVX25IfqP4uO2nOiMte89WE8Eu5wSkrvLf9UOSFqml0Ngdk</con:value></con:property></con:properties><con:returnProperties><con:entry>token</con:entry></con:returnProperties><con:runMode>PARALLELL</con:runMode></con:config></con:testStep><con:testStep type="restrequest" name="Artist" id="a3ea641d-4ad1-46f2-a327-cbde1f2278f1"><con:settings/><con:config service="https://api.spotify.com" resourcePath="/v1/artists/{id}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Artist" id="bf265b5f-66a9-42a6-af06-c358cb69cdb2" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${request_token#token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#SPOTIFY_REST_URL}</con:endpoint><con:request/><con:originalUri>https://api.spotify.com/v1/artists/id</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="de510e9a-789f-4fb1-a637-22e96d944ed2" name="Valid HTTP Status Codes"><con:configuration><codes>${#TestCase#status}</codes></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="${#TestCase#artist_id}" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="Transfer content" id="5940ca25-0fda-41b2-8808-2a3551823e84"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>content</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>Artist</con:sourceStep><con:sourcePath/><con:targetType>property_content</con:targetType><con:targetStep>#TestCase#</con:targetStep><con:type>XPATH</con:type><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:setupScript/><con:properties><con:property><con:name>artist_id</con:name><con:value>3AA28KZvwAUcZuOKwyblJQ</con:value></con:property><con:property><con:name>status</con:name><con:value>200,400,404</con:value></con:property><con:property><con:name>property_content</con:name><con:value>{
+  "external_urls" : {
+    "spotify" : "https://open.spotify.com/artist/3AA28KZvwAUcZuOKwyblJQ"
+  },
+  "followers" : {
+    "href" : null,
+    "total" : 2976708
+  },
+  "genres" : [ "alternative hip hop", "art pop" ],
+  "href" : "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ",
+  "id" : "3AA28KZvwAUcZuOKwyblJQ",
+  "images" : [ {
+    "height" : 640,
+    "url" : "https://i.scdn.co/image/fa3734a1c2e10634172434d45952da7bc1203bf0",
+    "width" : 640
+  }, {
+    "height" : 320,
+    "url" : "https://i.scdn.co/image/9bc913bf67b502baed6589d7984212a0e023918c",
+    "width" : 320
+  }, {
+    "height" : 160,
+    "url" : "https://i.scdn.co/image/8fcbb9905eaf86200fcc83687d48d36604350b98",
+    "width" : 160
+  } ],
+  "name" : "Gorillaz",
+  "popularity" : 82,
+  "type" : "artist",
+  "uri" : "spotify:artist:3AA28KZvwAUcZuOKwyblJQ"
+}</con:value></con:property></con:properties></con:testCase><con:testCase id="2cd9f74d-2ebc-4ab0-af5b-64ae8be3d8f3" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="spotify artist album" searchProperties="true"><con:settings/><con:testStep type="calltestcase" name="request_token" id="a6c1193e-fd7d-4eac-a893-a810085af90b"><con:settings/><con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:targetTestCase>d0a3b39a-33a2-43e4-8c68-d4ea589ec6eb</con:targetTestCase><con:properties><con:property><con:name>token</con:name><con:value>BQDBTL4derS_IuP3THDMWKdw95LIBRY5S7YatGpUiv67BGEfhhTSXf6jL8gngt5rGHrbpBa-lUMP9Rgly0k</con:value></con:property></con:properties><con:returnProperties><con:entry>token</con:entry></con:returnProperties><con:runMode>PARALLELL</con:runMode></con:config></con:testStep><con:testStep type="restrequest" name="Album" id="54d74ab6-43a3-442a-9c17-eed4c8505a2d"><con:settings/><con:config service="https://api.spotify.com" resourcePath="/v1/artists/{id}/albums" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Album" id="bf265b5f-66a9-42a6-af06-c358cb69cdb2" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${request_token#token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#SPOTIFY_REST_URL}</con:endpoint><con:request/><con:originalUri>https://api.spotify.com/v1/artists/id</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="ba9241b3-c8aa-40af-89e3-442d251bf833" name="Valid HTTP Status Codes"><con:configuration><codes>${#TestCase#status}</codes></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="${#TestCase#artist_id}" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="Transfer content" id="b565a66e-26f9-46be-830d-e918e01691c9"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>TransferContent</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>Album</con:sourceStep><con:targetType>response_Transfer</con:targetType><con:targetStep>#TestCase#</con:targetStep><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:properties><con:property><con:name>artist_id</con:name><con:value>6PIDLFGrJZQfNSZB6lLVAs</con:value></con:property><con:property><con:name>status</con:name><con:value>200,400</con:value></con:property><con:property><con:name>response_Transfer</con:name><con:value>{
+  "href" : "https://api.spotify.com/v1/artists/6PIDLFGrJZQfNSZB6lLVAs/albums?offset=0&amp;limit=20&amp;include_groups=album,single,compilation,appears_on",
+  "items" : [ {
+    "album_group" : "appears_on",
+    "album_type" : "compilation",
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+      },
+      "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+      "id" : "0LyfQWJT6nXafLPZqxe9Of",
+      "name" : "Various Artists",
+      "type" : "artist",
+      "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+    } ],
+    "available_markets" : [ "CA", "US" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/0j8tvbqrRNbZQuuKjHpUNs"
+    },
+    "href" : "https://api.spotify.com/v1/albums/0j8tvbqrRNbZQuuKjHpUNs",
+    "id" : "0j8tvbqrRNbZQuuKjHpUNs",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/4c4777f7ea7cb081af797b8b77fd22fd43508e7b",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/f6d6bf838e6ea627472bdaa0781c41a3103f4920",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/20fceb535d121f0fbd7f64a9993a28ddaa1a5251",
+      "width" : 64
+    } ],
+    "name" : "Rhythms Del Mundo Revival",
+    "release_date" : "2010-07-27",
+    "release_date_precision" : "day",
+    "type" : "album",
+    "uri" : "spotify:album:0j8tvbqrRNbZQuuKjHpUNs"
+  } ],
+  "limit" : 20,
+  "next" : null,
+  "offset" : 0,
+  "previous" : null,
+  "total" : 1
+}</con:value></con:property></con:properties></con:testCase><con:testCase id="eec8fc82-aebe-4844-8f02-62e8ef71fd1b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Spotify profile" searchProperties="true"><con:settings/><con:testStep type="calltestcase" name="request_token" id="37668256-bf61-4304-b899-57c140a64127" disabled="true"><con:settings/><con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:targetTestCase>d0a3b39a-33a2-43e4-8c68-d4ea589ec6eb</con:targetTestCase><con:properties><con:property><con:name>token</con:name><con:value>BQDktTEJLlw0hi5DlU5TeDWPwrOldJYHpOTpafEnXN9u7UuRn2ZQdfjl0HVGwnpONLxJNb4ABJZzSBBs7zg</con:value></con:property></con:properties><con:returnProperties><con:entry>token</con:entry></con:returnProperties><con:runMode>PARALLELL</con:runMode></con:config></con:testStep><con:testStep type="restrequest" name="Profile" id="69122de0-b843-4599-9fdc-1f84fffcb500"><con:settings/><con:config service="https://api.spotify.com" resourcePath="/v1/me" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Profile" id="7919ac0e-dad9-410e-b8e5-aba635ca5cb4" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#Project#SPOTIFY_USER_TOKEN}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#SPOTIFY_REST_URL}</con:endpoint><con:request/><con:originalUri>https://api.spotify.com/v1/me</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="b53300c6-06ea-41ab-8414-9bccff28446d" name="Valid HTTP Status Codes"><con:configuration><codes>${#TestCase#Status}</codes></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="ea3844bc-5d3f-40b7-b34b-9452281cea13" name="Display_Name"><con:configuration><path>.display_name</path><content>[Eduardo Mora Perez]</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="Transfer_content" id="58431ce0-4bc3-47e4-a2f3-e2d7a161b0fe"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>content</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>Profile</con:sourceStep><con:targetType>response_content</con:targetType><con:targetStep>#TestCase#</con:targetStep><con:type>JSONPATH</con:type><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:properties><con:property><con:name>Status</con:name><con:value>200</con:value></con:property><con:property><con:name>response_content</con:name><con:value>{
+  "birthdate" : "1990-04-02",
+  "country" : "MX",
+  "display_name" : "Eduardo Mora Perez",
+  "email" : "jemora90@hotmail.com",
+  "external_urls" : {
+    "spotify" : "https://open.spotify.com/user/1281690929"
+  },
+  "followers" : {
+    "href" : null,
+    "total" : 34
+  },
+  "href" : "https://api.spotify.com/v1/users/1281690929",
+  "id" : "1281690929",
+  "images" : [ {
+    "height" : null,
+    "url" : "https://scontent.xx.fbcdn.net/v/t1.0-1/c0.0.200.200/p200x200/27657099_1960403783988474_3324889285104147489_n.jpg?_nc_cat=0&amp;oh=c3126e53c9b5c808d47f0b30f235efc3&amp;oe=5BE5E992",
+    "width" : null
+  } ],
+  "product" : "premium",
+  "type" : "user",
+  "uri" : "spotify:user:1281690929"
+}</con:value></con:property><con:property><con:name>id</con:name><con:value>1281690929</con:value></con:property></con:properties></con:testCase><con:testCase id="2b213800-c738-47e4-b973-a4a95dffa32b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Spotify user profile" searchProperties="true"><con:settings/><con:testStep type="calltestcase" name="Get id" id="e93abe5d-0906-4e60-b196-1425995fd28b"><con:settings/><con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:targetTestCase>eec8fc82-aebe-4844-8f02-62e8ef71fd1b</con:targetTestCase><con:properties><con:property><con:name>Status</con:name><con:value>200</con:value></con:property><con:property><con:name>response_content</con:name></con:property><con:property><con:name>id</con:name><con:value>1281690929</con:value></con:property></con:properties><con:returnProperties><con:entry>Status</con:entry><con:entry>id</con:entry></con:returnProperties><con:runMode>PARALLELL</con:runMode></con:config></con:testStep><con:testStep type="restrequest" name="Get_id" id="e7aadefd-7126-4774-993b-9209335e7e08"><con:settings/><con:config service="https://api.spotify.com" resourcePath="/v1/users/{user_id}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get_id" id="5aede33b-a219-45e3-8d22-76ad6ca96898" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#Project#SPOTIFY_USER_TOKEN}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#SPOTIFY_REST_URL}</con:endpoint><con:request/><con:originalUri>https://api.spotify.com/v1/users/</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="a1497d6b-c0f8-4d0b-b16d-6fad1b3eddce" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="user_id" value="${#TestCase#User_id}" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>User_id</con:name><con:value>1281690929</con:value></con:property></con:properties></con:testCase><con:testCase id="e78a438a-f0c4-4f2f-a414-ae5a426d2d5a" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Get user current playlist" searchProperties="true"><con:settings/><con:testStep type="calltestcase" name="Get id" id="64f4cb3b-4d91-438d-b574-dbc662a861c7"><con:settings/><con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:targetTestCase>eec8fc82-aebe-4844-8f02-62e8ef71fd1b</con:targetTestCase><con:properties><con:property><con:name>Status</con:name><con:value>200</con:value></con:property><con:property><con:name>response_content</con:name></con:property><con:property><con:name>id</con:name><con:value>1281690929</con:value></con:property></con:properties><con:returnProperties><con:entry>Status</con:entry><con:entry>id</con:entry></con:returnProperties><con:runMode>PARALLELL</con:runMode></con:config></con:testStep><con:testStep type="restrequest" name="User playlist" id="ff134f68-a788-4fce-bebf-c41de3f505f3"><con:settings/><con:config service="https://api.spotify.com" resourcePath="/v1/me/playlists" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="User playlist" id="664d2eca-4dd0-4a75-9373-a9a210301390" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#Project#SPOTIFY_USER_TOKEN}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#SPOTIFY_REST_URL}</con:endpoint><con:request/><con:originalUri>https://api.spotify.com/v1/me/playlists</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="c0f78760-ca18-4ee6-ae36-7cd8d66a1b23" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="3798cd40-a298-4ee6-90a1-b8b6a12f171b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Playlist" searchProperties="true"><con:settings/><con:testStep type="calltestcase" name="request_token" id="c3ce4991-8f7f-44c6-b9cf-69f8cccbacf2"><con:settings/><con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:targetTestCase>d0a3b39a-33a2-43e4-8c68-d4ea589ec6eb</con:targetTestCase><con:properties><con:property><con:name>token</con:name><con:value>BQAnmxO3yEoCrxOt3MGC0M2jMv5NZFvjKYhnX6YUXbbVp1ZKxOxUVvODFIcaPD75ZwzyPsCmZt11z2mgOKQ</con:value></con:property></con:properties><con:returnProperties><con:entry>token</con:entry></con:returnProperties><con:runMode>PARALLELL</con:runMode></con:config></con:testStep><con:testStep type="restrequest" name="Playlist" id="cf3197f6-30e8-4256-af37-995405e85b46"><con:settings/><con:config service="https://api.spotify.com" resourcePath="/v1/users/{user_id}/playlists/{playlist_id}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Playlist" id="e76508d6-60eb-468d-9bb7-d0f880c33d8c" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${request_token#token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${#Project#SPOTIFY_REST_URL}</con:endpoint><con:request/><con:originalUri>https://api.spotify.com/v1/users/user_id/playlists/playlist_id</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="62ea9f73-7414-4aa3-b559-08e707de8ad2" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="user_id" value="${#TestCase#user_id}"/>
+  <con:entry key="playlist_id" value="${#TestCase#playlist_id}"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>user_id</con:name><con:value>1281690929</con:value></con:property><con:property><con:name>playlist_id</con:name><con:value>6a0BQnejecM7X5ce1CQ1Kv</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:testSuite id="dbe57d9b-1f13-4855-91c3-8048da762266" name="Spotify_search"><con:settings/><con:runType>PARALLELL</con:runType><con:testCase id="543f6635-9d28-4b53-a106-e8200a27e675" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="RG_Search_Gorillaz_on_US" searchProperties="true"><con:settings/><con:testStep type="calltestcase" name="SearchGorillaz" id="7ca17377-213a-4dd0-b4a9-e6394051c097"><con:settings/><con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:targetTestCase>5a5d510f-e4b9-4104-9e2a-185e475b4809</con:targetTestCase><con:properties><con:property><con:name>q</con:name><con:value>Gorillaz</con:value></con:property><con:property><con:name>type</con:name><con:value>artist</con:value></con:property><con:property><con:name>market</con:name><con:value>US</con:value></con:property><con:property><con:name>limit</con:name><con:value>10</con:value></con:property><con:property><con:name>offset</con:name><con:value>0</con:value></con:property><con:property><con:name>responseContent</con:name><con:value><![CDATA[{
+  "artists" : {
+    "href" : "https://api.spotify.com/v1/search?query=Gorillaz&type=artist&market=US&offset=0&limit=10",
+    "items" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3AA28KZvwAUcZuOKwyblJQ"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 3057985
+      },
+      "genres" : [ "alternative hip hop", "art pop" ],
+      "href" : "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ",
+      "id" : "3AA28KZvwAUcZuOKwyblJQ",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/fa3734a1c2e10634172434d45952da7bc1203bf0",
+        "width" : 640
+      }, {
+        "height" : 320,
+        "url" : "https://i.scdn.co/image/9bc913bf67b502baed6589d7984212a0e023918c",
+        "width" : 320
+      }, {
+        "height" : 160,
+        "url" : "https://i.scdn.co/image/8fcbb9905eaf86200fcc83687d48d36604350b98",
+        "width" : 160
+      } ],
+      "name" : "Gorillaz",
+      "popularity" : 82,
+      "type" : "artist",
+      "uri" : "spotify:artist:3AA28KZvwAUcZuOKwyblJQ"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/6PIDLFGrJZQfNSZB6lLVAs"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 116
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/6PIDLFGrJZQfNSZB6lLVAs",
+      "id" : "6PIDLFGrJZQfNSZB6lLVAs",
+      "images" : [ ],
+      "name" : "Gorillaz",
+      "popularity" : 9,
+      "type" : "artist",
+      "uri" : "spotify:artist:6PIDLFGrJZQfNSZB6lLVAs"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0AnzADJxsrc6Kgnv4AqwDw"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 312
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/0AnzADJxsrc6Kgnv4AqwDw",
+      "id" : "0AnzADJxsrc6Kgnv4AqwDw",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/5db561a7c08e70818084864be65a41416c35db87",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/767463b114a417943c62bb393139dd836e3bc529",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/68fdfe844839a51c6e164668316512076f13cf62",
+        "width" : 64
+      } ],
+      "name" : "Red Gorillaz",
+      "popularity" : 15,
+      "type" : "artist",
+      "uri" : "spotify:artist:0AnzADJxsrc6Kgnv4AqwDw"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3GkPA7jKwssNcCNF5tkYUf"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 445
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/3GkPA7jKwssNcCNF5tkYUf",
+      "id" : "3GkPA7jKwssNcCNF5tkYUf",
+      "images" : [ ],
+      "name" : "Gorillaz Featuring Daley",
+      "popularity" : 12,
+      "type" : "artist",
+      "uri" : "spotify:artist:3GkPA7jKwssNcCNF5tkYUf"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3hjp2GfGJGyjiplu9FPE1m"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 174
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/3hjp2GfGJGyjiplu9FPE1m",
+      "id" : "3hjp2GfGJGyjiplu9FPE1m",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/1df38d77ea82635a2d084761c3bd5208fd18d2f4",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/84d3dc4805d71b875b812f54ccf4b2b353d33dc3",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/da218f6d1717cd9545a62eea541824831ef05613",
+        "width" : 64
+      } ],
+      "name" : "Illa Gorillaz",
+      "popularity" : 1,
+      "type" : "artist",
+      "uri" : "spotify:artist:3hjp2GfGJGyjiplu9FPE1m"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/45WNgk9ahBlxT1cvT0rcH5"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 38
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/45WNgk9ahBlxT1cvT0rcH5",
+      "id" : "45WNgk9ahBlxT1cvT0rcH5",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/940a9ba1ff1336c065043e6054c740492c812216",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/b8b2cf02d9171042acce1897f303ebd99585d41f",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/5b5e4f2bb63925ad89de8a307f08b54a94c22268",
+        "width" : 64
+      } ],
+      "name" : "Untamed Gorillaz",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:45WNgk9ahBlxT1cvT0rcH5"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/13lvpAnM9chgENNOOvLECT"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 13
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/13lvpAnM9chgENNOOvLECT",
+      "id" : "13lvpAnM9chgENNOOvLECT",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/c8c7b0b23c88d22cd6904600f0e544b30bd68ce6",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/496a39c313f121b83091a6885824c7b3fb691c67",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/1027c0fde55af848d20989252f1d7e01506093a6",
+        "width" : 64
+      } ],
+      "name" : "Vanilla Gorillaz",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:13lvpAnM9chgENNOOvLECT"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/45ZlAYj33stOvxOBLlYDnK"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 11
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/45ZlAYj33stOvxOBLlYDnK",
+      "id" : "45ZlAYj33stOvxOBLlYDnK",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/35227b7a97e628e8524572786bda0cccb275e6b4",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/25bd8d7e049a509088429882507ef4564bc8c6e5",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/92b1b8e145384f249055647b4994346dc18b1f50",
+        "width" : 64
+      } ],
+      "name" : "Albino Gorillaz",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:45ZlAYj33stOvxOBLlYDnK"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4fjsFjUrcMsdHdobWU8BSh"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 20
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/4fjsFjUrcMsdHdobWU8BSh",
+      "id" : "4fjsFjUrcMsdHdobWU8BSh",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/92d220e5484ac30faff1f928430c70858df6dceb",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/316ce42ae609ca495f732fe1345afe50c36a5d49",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/98b52edefb0fb2e6b19914620d039cd6dfa47634",
+        "width" : 64
+      } ],
+      "name" : "Suluie Gorillaz",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:4fjsFjUrcMsdHdobWU8BSh"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4srvb5WHQsfDUaIkClivEY"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 3
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/4srvb5WHQsfDUaIkClivEY",
+      "id" : "4srvb5WHQsfDUaIkClivEY",
+      "images" : [ ],
+      "name" : "Pink Gorillaz",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:4srvb5WHQsfDUaIkClivEY"
+    } ],
+    "limit" : 10,
+    "next" : "https://api.spotify.com/v1/search?query=Gorillaz&type=artist&market=US&offset=10&limit=10",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 17
+  }
+}]]></con:value></con:property><con:property><con:name>expectedStatusCode</con:name><con:value>200</con:value></con:property><con:property><con:name>id</con:name></con:property></con:properties><con:returnProperties><con:entry>responseContent</con:entry></con:returnProperties><con:runMode>PARALLELL</con:runMode></con:config></con:testStep><con:tearDownScript>def report_file= context.expand('${#Project#TXT_REPORT}')
+QAMinds.reportTestcaseResult(testRunner,report_file,log)</con:tearDownScript><con:properties/></con:testCase><con:testCase id="c72bccce-5263-4574-9f5a-2a8684067967" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="RG_Search_Muse_on_US" searchProperties="true"><con:settings/><con:testStep type="calltestcase" name="Search_muse" id="a80c3114-8321-42c3-8eb1-bbeba19f9cd9"><con:settings/><con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:targetTestCase>5a5d510f-e4b9-4104-9e2a-185e475b4809</con:targetTestCase><con:properties><con:property><con:name>q</con:name><con:value>Muse</con:value></con:property><con:property><con:name>type</con:name><con:value>artist</con:value></con:property><con:property><con:name>market</con:name><con:value>US</con:value></con:property><con:property><con:name>limit</con:name><con:value>10</con:value></con:property><con:property><con:name>offset</con:name><con:value>0</con:value></con:property><con:property><con:name>responseContent</con:name><con:value><![CDATA[{
+  "artists" : {
+    "href" : "https://api.spotify.com/v1/search?query=Muse&type=artist&market=US&offset=0&limit=10",
+    "items" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/12Chz98pHFMPJEknJQMWvI"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 3925085
+      },
+      "genres" : [ "modern rock", "permanent wave", "piano rock", "post-grunge", "rock" ],
+      "href" : "https://api.spotify.com/v1/artists/12Chz98pHFMPJEknJQMWvI",
+      "id" : "12Chz98pHFMPJEknJQMWvI",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/19ac88c7aec1f68aa6e207aff29efa15d37336a7",
+        "width" : 640
+      }, {
+        "height" : 320,
+        "url" : "https://i.scdn.co/image/7ad2128db73a2814a1a96498404a5d9aabb4c15c",
+        "width" : 320
+      }, {
+        "height" : 160,
+        "url" : "https://i.scdn.co/image/f026a6204c28907e43e833eaa1820f9b674295ca",
+        "width" : 160
+      } ],
+      "name" : "Muse",
+      "popularity" : 76,
+      "type" : "artist",
+      "uri" : "spotify:artist:12Chz98pHFMPJEknJQMWvI"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0LjVOGAofVR8GpUkRODKhA"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 3
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/0LjVOGAofVR8GpUkRODKhA",
+      "id" : "0LjVOGAofVR8GpUkRODKhA",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/c9f74f62a3ac2a96c8d133a91d0877d3b338ce46",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/8f08322b64ae497ff8394e670f5d4da5305e62c0",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/67b8562e31f199204757e51867bdda6de153fec6",
+        "width" : 64
+      } ],
+      "name" : "Sky Muse",
+      "popularity" : 32,
+      "type" : "artist",
+      "uri" : "spotify:artist:0LjVOGAofVR8GpUkRODKhA"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/6dauOpCe6nbJap574c28ss"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 711
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/6dauOpCe6nbJap574c28ss",
+      "id" : "6dauOpCe6nbJap574c28ss",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/6a34d321acd68e8fbf3b18a327df099355d1637a",
+        "width" : 640
+      }, {
+        "height" : 320,
+        "url" : "https://i.scdn.co/image/b0bae59f33c8561c26620621e3e3cf4da94c8ff2",
+        "width" : 320
+      }, {
+        "height" : 160,
+        "url" : "https://i.scdn.co/image/45d7f99651183c2761caf84b0c44f9093adb5010",
+        "width" : 160
+      } ],
+      "name" : "Kenif Muse",
+      "popularity" : 22,
+      "type" : "artist",
+      "uri" : "spotify:artist:6dauOpCe6nbJap574c28ss"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2nYRDHDPqrclxCKNOCFY2j"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 300
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/2nYRDHDPqrclxCKNOCFY2j",
+      "id" : "2nYRDHDPqrclxCKNOCFY2j",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/1b3a43654bc8a13725ca86be9401e3e32294765f",
+        "width" : 640
+      }, {
+        "height" : 320,
+        "url" : "https://i.scdn.co/image/ab03145541a21f272179328f124f6b3cc5f75fcd",
+        "width" : 320
+      }, {
+        "height" : 160,
+        "url" : "https://i.scdn.co/image/04e282c917882d2b83ab7f98bead10d6c76cb3f4",
+        "width" : 160
+      } ],
+      "name" : "Pixy Muse",
+      "popularity" : 18,
+      "type" : "artist",
+      "uri" : "spotify:artist:2nYRDHDPqrclxCKNOCFY2j"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0EcCExwuVReDp8Y86sLXUo"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 46
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/0EcCExwuVReDp8Y86sLXUo",
+      "id" : "0EcCExwuVReDp8Y86sLXUo",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/fef4944016086c9f0afb7ee943ab0a0d746b30e7",
+        "width" : 640
+      }, {
+        "height" : 320,
+        "url" : "https://i.scdn.co/image/39d74c5be6e3e929bdca315b2a4c60fc6c581487",
+        "width" : 320
+      }, {
+        "height" : 160,
+        "url" : "https://i.scdn.co/image/ae04510bb2b9493375de9e3748651e4574de4084",
+        "width" : 160
+      } ],
+      "name" : "Charlee Muse",
+      "popularity" : 25,
+      "type" : "artist",
+      "uri" : "spotify:artist:0EcCExwuVReDp8Y86sLXUo"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3waFze2hMUecCLD0BJ4rvU"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 7911
+      },
+      "genres" : [ "dark wave", "ethereal wave", "gothic rock", "medieval folk", "neoclassical", "steampunk" ],
+      "href" : "https://api.spotify.com/v1/artists/3waFze2hMUecCLD0BJ4rvU",
+      "id" : "3waFze2hMUecCLD0BJ4rvU",
+      "images" : [ {
+        "height" : 432,
+        "url" : "https://i.scdn.co/image/bf5ef59f96049d1969f99fb292f15607efd4fa42",
+        "width" : 279
+      }, {
+        "height" : 310,
+        "url" : "https://i.scdn.co/image/420c64d3d03da48bccee6dcba3abb2db67fa6772",
+        "width" : 200
+      }, {
+        "height" : 99,
+        "url" : "https://i.scdn.co/image/46bf71307e4debfd814bf47b344af8b19759ed57",
+        "width" : 64
+      } ],
+      "name" : "Faith And The Muse",
+      "popularity" : 24,
+      "type" : "artist",
+      "uri" : "spotify:artist:3waFze2hMUecCLD0BJ4rvU"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0oYf9u7u00PBfFUDY6B00U"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 11
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/0oYf9u7u00PBfFUDY6B00U",
+      "id" : "0oYf9u7u00PBfFUDY6B00U",
+      "images" : [ ],
+      "name" : "M.U.S.E.",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:0oYf9u7u00PBfFUDY6B00U"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4L6i1I6tFpc1bKui5coGme"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 5170
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/4L6i1I6tFpc1bKui5coGme",
+      "id" : "4L6i1I6tFpc1bKui5coGme",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/a170a5f6cfeb5745f2db1ad2aa33f84609e5a9f0",
+        "width" : 640
+      }, {
+        "height" : 320,
+        "url" : "https://i.scdn.co/image/7f8533f5db98a9e1b5d13af9f4ead3d055e48fc8",
+        "width" : 320
+      }, {
+        "height" : 160,
+        "url" : "https://i.scdn.co/image/a1d7062e82df44f379bae26f71aadccd1bbbb589",
+        "width" : 160
+      } ],
+      "name" : "Muse",
+      "popularity" : 5,
+      "type" : "artist",
+      "uri" : "spotify:artist:4L6i1I6tFpc1bKui5coGme"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0inqYzOUTMjqLUEZ4I7fBA"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 2
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/0inqYzOUTMjqLUEZ4I7fBA",
+      "id" : "0inqYzOUTMjqLUEZ4I7fBA",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/7d1b61d330e0e80cb836e5b2a33783a5d021009e",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/48fc330ca901fb7a6c9356f4402b380317de09c5",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ee6cc6264de5e53f6ff58e78de206bb7b0399170",
+        "width" : 64
+      } ],
+      "name" : "MUSE",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:0inqYzOUTMjqLUEZ4I7fBA"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3TN2e4aym8jdMv7uxWuMa5"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 1
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/3TN2e4aym8jdMv7uxWuMa5",
+      "id" : "3TN2e4aym8jdMv7uxWuMa5",
+      "images" : [ ],
+      "name" : "MUSE",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:3TN2e4aym8jdMv7uxWuMa5"
+    } ],
+    "limit" : 10,
+    "next" : "https://api.spotify.com/v1/search?query=Muse&type=artist&market=US&offset=10&limit=10",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 206
+  }
+}]]></con:value></con:property><con:property><con:name>expectedStatusCode</con:name><con:value>200</con:value></con:property><con:property><con:name>id</con:name></con:property></con:properties><con:returnProperties><con:entry>responseContent</con:entry></con:returnProperties><con:runMode>PARALLELL</con:runMode></con:config></con:testStep><con:tearDownScript>def report_file= context.expand('${#Project#TXT_REPORT}')
+QAMinds.reportTestcaseResult(testRunner,report_file,log)</con:tearDownScript><con:properties/></con:testCase><con:testCase id="e2b6b6bb-35b4-4fe9-adec-c6fdc4baf4af" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ng_spotify_search" searchProperties="true"><con:settings/><con:testStep type="calltestcase" name="ng_search" id="c8427a18-3cc0-4341-9622-6a9fc217e203"><con:settings/><con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:targetTestCase>5a5d510f-e4b9-4104-9e2a-185e475b4809</con:targetTestCase><con:properties><con:property><con:name>q</con:name><con:value>art123</con:value></con:property><con:property><con:name>type</con:name><con:value>art</con:value></con:property><con:property><con:name>market</con:name><con:value>US</con:value></con:property><con:property><con:name>limit</con:name><con:value>10</con:value></con:property><con:property><con:name>offset</con:name><con:value>0</con:value></con:property><con:property><con:name>responseContent</con:name><con:value><![CDATA[{
+  "artists" : {
+    "href" : "https://api.spotify.com/v1/search?query=Gorillaz&type=artist&market=US&offset=0&limit=10",
+    "items" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3AA28KZvwAUcZuOKwyblJQ"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 2942142
+      },
+      "genres" : [ "alternative hip hop", "art pop" ],
+      "href" : "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ",
+      "id" : "3AA28KZvwAUcZuOKwyblJQ",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/fa3734a1c2e10634172434d45952da7bc1203bf0",
+        "width" : 640
+      }, {
+        "height" : 320,
+        "url" : "https://i.scdn.co/image/9bc913bf67b502baed6589d7984212a0e023918c",
+        "width" : 320
+      }, {
+        "height" : 160,
+        "url" : "https://i.scdn.co/image/8fcbb9905eaf86200fcc83687d48d36604350b98",
+        "width" : 160
+      } ],
+      "name" : "Gorillaz",
+      "popularity" : 81,
+      "type" : "artist",
+      "uri" : "spotify:artist:3AA28KZvwAUcZuOKwyblJQ"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/6PIDLFGrJZQfNSZB6lLVAs"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 116
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/6PIDLFGrJZQfNSZB6lLVAs",
+      "id" : "6PIDLFGrJZQfNSZB6lLVAs",
+      "images" : [ ],
+      "name" : "Gorillaz",
+      "popularity" : 10,
+      "type" : "artist",
+      "uri" : "spotify:artist:6PIDLFGrJZQfNSZB6lLVAs"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0AnzADJxsrc6Kgnv4AqwDw"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 305
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/0AnzADJxsrc6Kgnv4AqwDw",
+      "id" : "0AnzADJxsrc6Kgnv4AqwDw",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/5db561a7c08e70818084864be65a41416c35db87",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/767463b114a417943c62bb393139dd836e3bc529",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/68fdfe844839a51c6e164668316512076f13cf62",
+        "width" : 64
+      } ],
+      "name" : "Red Gorillaz",
+      "popularity" : 16,
+      "type" : "artist",
+      "uri" : "spotify:artist:0AnzADJxsrc6Kgnv4AqwDw"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3GkPA7jKwssNcCNF5tkYUf"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 452
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/3GkPA7jKwssNcCNF5tkYUf",
+      "id" : "3GkPA7jKwssNcCNF5tkYUf",
+      "images" : [ ],
+      "name" : "Gorillaz Featuring Daley",
+      "popularity" : 14,
+      "type" : "artist",
+      "uri" : "spotify:artist:3GkPA7jKwssNcCNF5tkYUf"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3hjp2GfGJGyjiplu9FPE1m"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 172
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/3hjp2GfGJGyjiplu9FPE1m",
+      "id" : "3hjp2GfGJGyjiplu9FPE1m",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/1df38d77ea82635a2d084761c3bd5208fd18d2f4",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/84d3dc4805d71b875b812f54ccf4b2b353d33dc3",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/da218f6d1717cd9545a62eea541824831ef05613",
+        "width" : 64
+      } ],
+      "name" : "Illa Gorillaz",
+      "popularity" : 1,
+      "type" : "artist",
+      "uri" : "spotify:artist:3hjp2GfGJGyjiplu9FPE1m"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/45WNgk9ahBlxT1cvT0rcH5"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 38
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/45WNgk9ahBlxT1cvT0rcH5",
+      "id" : "45WNgk9ahBlxT1cvT0rcH5",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/940a9ba1ff1336c065043e6054c740492c812216",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/b8b2cf02d9171042acce1897f303ebd99585d41f",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/5b5e4f2bb63925ad89de8a307f08b54a94c22268",
+        "width" : 64
+      } ],
+      "name" : "Untamed Gorillaz",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:45WNgk9ahBlxT1cvT0rcH5"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/13lvpAnM9chgENNOOvLECT"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 13
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/13lvpAnM9chgENNOOvLECT",
+      "id" : "13lvpAnM9chgENNOOvLECT",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/9690a4b84062b7497e2754e853096ce7a323fdbb",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/9a996a8b21022a37c2d805149230ad031a3d849a",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/b2bcee1dc4766950e07de5ef5f566b4fe30c2282",
+        "width" : 64
+      } ],
+      "name" : "Vanilla Gorillaz",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:13lvpAnM9chgENNOOvLECT"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/45ZlAYj33stOvxOBLlYDnK"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 11
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/45ZlAYj33stOvxOBLlYDnK",
+      "id" : "45ZlAYj33stOvxOBLlYDnK",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/35227b7a97e628e8524572786bda0cccb275e6b4",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/25bd8d7e049a509088429882507ef4564bc8c6e5",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/92b1b8e145384f249055647b4994346dc18b1f50",
+        "width" : 64
+      } ],
+      "name" : "Albino Gorillaz",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:45ZlAYj33stOvxOBLlYDnK"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4fjsFjUrcMsdHdobWU8BSh"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 20
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/4fjsFjUrcMsdHdobWU8BSh",
+      "id" : "4fjsFjUrcMsdHdobWU8BSh",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/92d220e5484ac30faff1f928430c70858df6dceb",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/316ce42ae609ca495f732fe1345afe50c36a5d49",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/98b52edefb0fb2e6b19914620d039cd6dfa47634",
+        "width" : 64
+      } ],
+      "name" : "Suluie Gorillaz",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:4fjsFjUrcMsdHdobWU8BSh"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4srvb5WHQsfDUaIkClivEY"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 3
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/4srvb5WHQsfDUaIkClivEY",
+      "id" : "4srvb5WHQsfDUaIkClivEY",
+      "images" : [ ],
+      "name" : "Pink Gorillaz",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:4srvb5WHQsfDUaIkClivEY"
+    } ],
+    "limit" : 10,
+    "next" : "https://api.spotify.com/v1/search?query=Gorillaz&type=artist&market=US&offset=10&limit=10",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 17
+  }
+}]]></con:value></con:property><con:property><con:name>expectedStatusCode</con:name><con:value>200,400</con:value></con:property><con:property><con:name>id</con:name></con:property></con:properties><con:returnProperties><con:entry>responseContent</con:entry><con:entry>expectedStatusCode</con:entry></con:returnProperties><con:runMode>PARALLELL</con:runMode></con:config></con:testStep><con:tearDownScript>def report_file= context.expand('${#Project#TXT_REPORT}')
+QAMinds.reportTestcaseResult(testRunner,report_file,log)</con:tearDownScript><con:properties/></con:testCase><con:testCase id="e9b1a083-b122-4d26-84b4-8e9d37d05e08" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="search_use_for_testing" searchProperties="true"><con:settings/><con:testStep type="calltestcase" name="SearchGorillaz" id="ed6b6560-d7f5-490e-a105-caa876cc42ac"><con:settings/><con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:targetTestCase>5a5d510f-e4b9-4104-9e2a-185e475b4809</con:targetTestCase><con:properties><con:property><con:name>q</con:name><con:value>Gorillaz</con:value></con:property><con:property><con:name>type</con:name><con:value>artist</con:value></con:property><con:property><con:name>market</con:name><con:value>US</con:value></con:property><con:property><con:name>limit</con:name><con:value>10</con:value></con:property><con:property><con:name>offset</con:name><con:value>0</con:value></con:property><con:property><con:name>responseContent</con:name><con:value><![CDATA[{
+  "artists" : {
+    "href" : "https://api.spotify.com/v1/search?query=Gorillaz&type=artist&market=US&offset=0&limit=10",
+    "items" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3AA28KZvwAUcZuOKwyblJQ"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 3057985
+      },
+      "genres" : [ "alternative hip hop", "art pop" ],
+      "href" : "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ",
+      "id" : "3AA28KZvwAUcZuOKwyblJQ",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/fa3734a1c2e10634172434d45952da7bc1203bf0",
+        "width" : 640
+      }, {
+        "height" : 320,
+        "url" : "https://i.scdn.co/image/9bc913bf67b502baed6589d7984212a0e023918c",
+        "width" : 320
+      }, {
+        "height" : 160,
+        "url" : "https://i.scdn.co/image/8fcbb9905eaf86200fcc83687d48d36604350b98",
+        "width" : 160
+      } ],
+      "name" : "Gorillaz",
+      "popularity" : 82,
+      "type" : "artist",
+      "uri" : "spotify:artist:3AA28KZvwAUcZuOKwyblJQ"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/6PIDLFGrJZQfNSZB6lLVAs"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 116
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/6PIDLFGrJZQfNSZB6lLVAs",
+      "id" : "6PIDLFGrJZQfNSZB6lLVAs",
+      "images" : [ ],
+      "name" : "Gorillaz",
+      "popularity" : 9,
+      "type" : "artist",
+      "uri" : "spotify:artist:6PIDLFGrJZQfNSZB6lLVAs"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0AnzADJxsrc6Kgnv4AqwDw"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 312
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/0AnzADJxsrc6Kgnv4AqwDw",
+      "id" : "0AnzADJxsrc6Kgnv4AqwDw",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/5db561a7c08e70818084864be65a41416c35db87",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/767463b114a417943c62bb393139dd836e3bc529",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/68fdfe844839a51c6e164668316512076f13cf62",
+        "width" : 64
+      } ],
+      "name" : "Red Gorillaz",
+      "popularity" : 15,
+      "type" : "artist",
+      "uri" : "spotify:artist:0AnzADJxsrc6Kgnv4AqwDw"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3GkPA7jKwssNcCNF5tkYUf"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 445
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/3GkPA7jKwssNcCNF5tkYUf",
+      "id" : "3GkPA7jKwssNcCNF5tkYUf",
+      "images" : [ ],
+      "name" : "Gorillaz Featuring Daley",
+      "popularity" : 12,
+      "type" : "artist",
+      "uri" : "spotify:artist:3GkPA7jKwssNcCNF5tkYUf"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3hjp2GfGJGyjiplu9FPE1m"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 174
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/3hjp2GfGJGyjiplu9FPE1m",
+      "id" : "3hjp2GfGJGyjiplu9FPE1m",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/1df38d77ea82635a2d084761c3bd5208fd18d2f4",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/84d3dc4805d71b875b812f54ccf4b2b353d33dc3",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/da218f6d1717cd9545a62eea541824831ef05613",
+        "width" : 64
+      } ],
+      "name" : "Illa Gorillaz",
+      "popularity" : 1,
+      "type" : "artist",
+      "uri" : "spotify:artist:3hjp2GfGJGyjiplu9FPE1m"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/45WNgk9ahBlxT1cvT0rcH5"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 38
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/45WNgk9ahBlxT1cvT0rcH5",
+      "id" : "45WNgk9ahBlxT1cvT0rcH5",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/940a9ba1ff1336c065043e6054c740492c812216",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/b8b2cf02d9171042acce1897f303ebd99585d41f",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/5b5e4f2bb63925ad89de8a307f08b54a94c22268",
+        "width" : 64
+      } ],
+      "name" : "Untamed Gorillaz",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:45WNgk9ahBlxT1cvT0rcH5"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/13lvpAnM9chgENNOOvLECT"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 13
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/13lvpAnM9chgENNOOvLECT",
+      "id" : "13lvpAnM9chgENNOOvLECT",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/c8c7b0b23c88d22cd6904600f0e544b30bd68ce6",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/496a39c313f121b83091a6885824c7b3fb691c67",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/1027c0fde55af848d20989252f1d7e01506093a6",
+        "width" : 64
+      } ],
+      "name" : "Vanilla Gorillaz",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:13lvpAnM9chgENNOOvLECT"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/45ZlAYj33stOvxOBLlYDnK"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 11
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/45ZlAYj33stOvxOBLlYDnK",
+      "id" : "45ZlAYj33stOvxOBLlYDnK",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/35227b7a97e628e8524572786bda0cccb275e6b4",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/25bd8d7e049a509088429882507ef4564bc8c6e5",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/92b1b8e145384f249055647b4994346dc18b1f50",
+        "width" : 64
+      } ],
+      "name" : "Albino Gorillaz",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:45ZlAYj33stOvxOBLlYDnK"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4fjsFjUrcMsdHdobWU8BSh"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 20
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/4fjsFjUrcMsdHdobWU8BSh",
+      "id" : "4fjsFjUrcMsdHdobWU8BSh",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/92d220e5484ac30faff1f928430c70858df6dceb",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/316ce42ae609ca495f732fe1345afe50c36a5d49",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/98b52edefb0fb2e6b19914620d039cd6dfa47634",
+        "width" : 64
+      } ],
+      "name" : "Suluie Gorillaz",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:4fjsFjUrcMsdHdobWU8BSh"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4srvb5WHQsfDUaIkClivEY"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 3
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/4srvb5WHQsfDUaIkClivEY",
+      "id" : "4srvb5WHQsfDUaIkClivEY",
+      "images" : [ ],
+      "name" : "Pink Gorillaz",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:4srvb5WHQsfDUaIkClivEY"
+    } ],
+    "limit" : 10,
+    "next" : "https://api.spotify.com/v1/search?query=Gorillaz&type=artist&market=US&offset=10&limit=10",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 17
+  }
+}]]></con:value></con:property><con:property><con:name>expectedStatusCode</con:name><con:value>200</con:value></con:property><con:property><con:name>id</con:name></con:property></con:properties><con:returnProperties><con:entry>responseContent</con:entry></con:returnProperties><con:runMode>PARALLELL</con:runMode></con:config></con:testStep><con:setupScript>import groovy.json.*
+
+	def getRootDir(def project) {
+	File projectFile = new File(project.getPath());
+	return projectFile.getParentFile()
+	}
+
+
+def loadEnvConfig(def testSuite, def configName,def env, def log) {
+	def project = testSuite.getProject()
+	def configFile = new File(getRootDir(project), configName)
+	log.info(configFile)
+	def json = new JsonSlurper().parseText(configFile.text)
+	json[env].each { key, val ->
+	log.info("Setting Environment Variable: " + key + "->" + val)
+	project.setPropertyValue(key, val)
+	}
+
+}
+
+def reportTestcaseResult(def testRunner, def resultFilePath, def log) {
+	def project = testRunner.getTestCase().getTestSuite().getProject()
+	def resultFile = new File(getRootDir(project), resultFilePath)
+	def testCaseName = testRunner.getTestCase().getLabel()
+	log.info("Creating report : " + resultFile)
+	resultFile &lt;&lt; 'RESULTS FOR ' + testCaseName+ '\n'
+	def testStepsResults = testRunner.getResults()
+	testStepsResults.each { stepResult ->
+	def name = stepResult.getTestStep().getLabel()
+	def status = stepResult.getStatus().toString()
+	def time = stepResult.getTimeTaken().toString()
+	def error = stepResult.getError().toString()
+	resultFile &lt;&lt; [name, status, time, error].join('::')+'\n'
+}
+	log.info("Report completed")
+}
+def project = testCase.getProject()
+def testSuite = testCase.getTestSuite()
+loadEnvConfig(testSuite,context.expand('${#Project#ENV_CONFIG}'),context.expand('${#Project#ENV}'),log)
+reportTestcaseResult(testRunner,context.expand('${#Project#TEXT_REPORT}'),log)
+
+</con:setupScript><con:tearDownScript>def report_file= context.expand('${#Project#TXT_REPORT}')
+QAMinds.reportTestcaseResult(testRunner,report_file,log)</con:tearDownScript><con:properties/></con:testCase><con:properties/><con:setupScript>def env_config= context.expand('${#Project#ENV_CONFIG}')
+def env= context.expand('${#Project#ENV}')
+QAMinds.loadEnvConfig(testSuite,env_config,env,log)</con:setupScript><con:tearDownScript/></con:testSuite><con:testSuite id="4128b1f0-0679-4ed5-ae76-a200b26d3ced" name="ArtistID"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="074f032d-33e0-4f52-93c2-c293f6b10a99" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Artist ID valid" searchProperties="true"><con:settings/><con:testStep type="calltestcase" name="Artist_ID_valid" id="8cf2aafa-ebf1-4bc8-843a-8774bffc1e6f"><con:settings/><con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:targetTestCase>8830ba76-9092-4676-ae37-f3aa6fb57c9a</con:targetTestCase><con:properties><con:property><con:name>artist_id</con:name><con:value>4srvb5WHQsfDUaIkClivEY</con:value></con:property><con:property><con:name>status</con:name><con:value>200,400,404</con:value></con:property><con:property><con:name>property_content</con:name><con:value>{
+  "external_urls" : {
+    "spotify" : "https://open.spotify.com/artist/4srvb5WHQsfDUaIkClivEY"
+  },
+  "followers" : {
+    "href" : null,
+    "total" : 3
+  },
+  "genres" : [ ],
+  "href" : "https://api.spotify.com/v1/artists/4srvb5WHQsfDUaIkClivEY",
+  "id" : "4srvb5WHQsfDUaIkClivEY",
+  "images" : [ ],
+  "name" : "Pink Gorillaz",
+  "popularity" : 0,
+  "type" : "artist",
+  "uri" : "spotify:artist:4srvb5WHQsfDUaIkClivEY"
+}</con:value></con:property></con:properties><con:returnProperties><con:entry>status</con:entry><con:entry>property_content</con:entry></con:returnProperties><con:runMode>PARALLELL</con:runMode></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="8a297190-f3ee-484f-aebe-4692133efeca" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Artist invalid ID" searchProperties="true"><con:settings/><con:testStep type="calltestcase" name="Artist_Invalid_ID" id="dac9f851-1c7d-4229-a81b-141209236fed"><con:settings/><con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:targetTestCase>8830ba76-9092-4676-ae37-f3aa6fb57c9a</con:targetTestCase><con:properties><con:property><con:name>artist_id</con:name><con:value>asqsf</con:value></con:property><con:property><con:name>status</con:name><con:value>200,400,404</con:value></con:property><con:property><con:name>property_content</con:name><con:value>{
+  "error" : {
+    "status" : 400,
+    "message" : "invalid id"
+  }
+}</con:value></con:property></con:properties><con:returnProperties><con:entry>status</con:entry><con:entry>property_content</con:entry></con:returnProperties><con:runMode>PARALLELL</con:runMode></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="63ec60fc-9daf-4efd-b69e-577040368d01" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Artist non existing id" searchProperties="true"><con:settings/><con:testStep type="calltestcase" name="Artist non existing id" id="03325ef7-8bd3-4c6e-ba5b-3028ef8661ec"><con:settings/><con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:targetTestCase>8830ba76-9092-4676-ae37-f3aa6fb57c9a</con:targetTestCase><con:properties><con:property><con:name>artist_id</con:name><con:value>iolkjmn7659iolkm67is89</con:value></con:property><con:property><con:name>status</con:name><con:value>200,400,404</con:value></con:property><con:property><con:name>property_content</con:name><con:value>{
+  "error" : {
+    "status" : 404,
+    "message" : "non existing id"
+  }
+}</con:value></con:property></con:properties><con:returnProperties><con:entry>status</con:entry><con:entry>property_content</con:entry></con:returnProperties><con:runMode>PARALLELL</con:runMode></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>SPOTIFY_CLIENT_ID</con:name><con:value>099e888dad274f0ab0f81943f2f68a50</con:value></con:property><con:property><con:name>SPOTIFY_CLIENT_SECRET</con:name><con:value>15350757d3e64cd4bd579050de8da0a0</con:value></con:property><con:property><con:name>SPOTIFY_GRANT_TYPE</con:name><con:value>client_credentials</con:value></con:property><con:property><con:name>SPOTIFY_REST_URL</con:name><con:value>https://api.spotify.com</con:value></con:property><con:property><con:name>SPOTIFY_ACCOUNT_URL</con:name><con:value>https://accounts.spotify.com</con:value></con:property><con:property><con:name>SUBMIT_BUG</con:name><con:value>true</con:value></con:property><con:property><con:name>CREATE_EXCEL_REPORT</con:name><con:value>true</con:value></con:property><con:property><con:name>ENV</con:name><con:value>prod</con:value></con:property><con:property><con:name>REPORT_RESULT</con:name><con:value>true</con:value></con:property><con:property><con:name>SPOTIFY_USER_TOKEN</con:name><con:value>5jNhwx6i9u9m09boYfrsZEA1yIGV5OiC2NxcK3nJYDbkZwTnLAz_vceS7uHFWZSJDAeCeS0du9l8mXvXx4NqY_Sxw</con:value></con:property><con:property><con:name>GRPS</con:name><con:value>RG,SM</con:value></con:property><con:property><con:name>ENV_CONFIG</con:name><con:value>envConfig.json</con:value></con:property><con:property><con:name>TEXT_REPORT</con:name><con:value>result.txt</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
