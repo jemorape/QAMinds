@@ -1,21 +1,20 @@
-Status: FAILED
-Time Taken: 156
-Size: 85
-Timestamp: Mon Jul 02 11:24:17 CDT 2018
+Status: OK
+Time Taken: 161
+Size: 88
+Timestamp: Mon Jul 02 17:09:20 CDT 2018
 TestStep: Search
 
 ----------------- Messages ------------------------------
-[Script Assertion] Invalid respomnse status 400. Expression: (respStatus == 200). Values: respStatus = 400
 
 ----------------- Properties ------------------------------
 HTTP Version: HTTP/1.1
 Endpoint: https://api.spotify.com
 Method: GET
 StatusCode: 400
-URL: https://api.spotify.com/v1/search?q=art123&type=art&market=US&limit=10&offset=0
+URL: https://api.spotify.com/v1/search?q=art123&type=art123&market=US&limit=10&offset=0
 
 ---------------- Request ---------------------------
-Authorization: [Bearer BQCp-5hhBZWqxN8Fxj1JOe4Vs-Iy4Z_OtXRuDKvv2Sra5IqnDHPUAQgofwo99iDkAn3RQ2Nk-mGajGB9C3g]
+Authorization: [Bearer BQB2T4fr8CJxAgkMarHwtJtnDndrha0A1Q5BJAdSVdj0LTY9w9APlw_cyaCCiEPBgpOZpldIdLe7Etwyxeo]
 Connection: [Keep-Alive]
 User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
 Host: [api.spotify.com]
@@ -27,7 +26,7 @@ Alt-Svc: [clear]
 Access-Control-Allow-Origin: [*]
 Access-Control-Allow-Methods: [GET, POST, OPTIONS, PUT, DELETE, PATCH]
 Access-Control-Allow-Headers: [Accept, Authorization, Origin, Content-Type, Retry-After]
-Date: [Mon, 02 Jul 2018 16:24:17 GMT]
+Date: [Mon, 02 Jul 2018 22:09:20 GMT]
 Via: [1.1 google]
 Cache-Control: [private, max-age=0]
 Access-Control-Allow-Credentials: [true]
@@ -39,6 +38,6 @@ Content-Type: [application/json; charset=utf-8]
 {
   "error" : {
     "status" : 400,
-    "message" : "Bad search type field art"
+    "message" : "Bad search type field art123"
   }
 }

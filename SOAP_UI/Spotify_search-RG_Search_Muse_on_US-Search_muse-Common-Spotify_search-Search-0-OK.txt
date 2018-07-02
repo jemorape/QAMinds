@@ -1,7 +1,7 @@
 Status: OK
-Time Taken: 175
+Time Taken: 155
 Size: 8715
-Timestamp: Mon Jul 02 11:24:17 CDT 2018
+Timestamp: Mon Jul 02 17:09:20 CDT 2018
 TestStep: Search
 
 ----------------- Messages ------------------------------
@@ -14,7 +14,7 @@ StatusCode: 200
 URL: https://api.spotify.com/v1/search?q=Muse&type=artist&market=US&limit=10&offset=0
 
 ---------------- Request ---------------------------
-Authorization: [Bearer BQBkJyrqJ7rm361QMkgmdn14fTMG4rv98v_mw3FuIuOTeAfJbcR_jAUDJi1rsI98zC0613cb-_6zvGXbjhU]
+Authorization: [Bearer BQDAUa-tlJ54z0M5PtK92N4QEK_lohWeBBaO1TkIYBRn1IkOdx1ptZwjgvXIFgDzDEQ4WL1Ne89KtAn7MEs]
 Connection: [Keep-Alive]
 User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
 Host: [api.spotify.com]
@@ -26,7 +26,7 @@ Alt-Svc: [clear]
 Access-Control-Allow-Origin: [*]
 Access-Control-Allow-Methods: [GET, POST, OPTIONS, PUT, DELETE, PATCH]
 Access-Control-Allow-Headers: [Accept, Authorization, Origin, Content-Type, Retry-After]
-Date: [Mon, 02 Jul 2018 16:24:17 GMT]
+Date: [Mon, 02 Jul 2018 22:09:20 GMT]
 Via: [1.1 google]
 Cache-Control: [public, max-age=7200]
 Access-Control-Allow-Credentials: [true]
@@ -44,7 +44,7 @@ Content-Type: [application/json; charset=utf-8]
       },
       "followers" : {
         "href" : null,
-        "total" : 3925941
+        "total" : 3940210
       },
       "genres" : [ "modern rock", "permanent wave", "piano rock", "post-grunge", "rock" ],
       "href" : "https://api.spotify.com/v1/artists/12Chz98pHFMPJEknJQMWvI",
@@ -184,7 +184,7 @@ Content-Type: [application/json; charset=utf-8]
       },
       "followers" : {
         "href" : null,
-        "total" : 7911
+        "total" : 7937
       },
       "genres" : [ "dark wave", "ethereal wave", "gothic rock", "medieval folk", "neoclassical", "steampunk" ],
       "href" : "https://api.spotify.com/v1/artists/3waFze2hMUecCLD0BJ4rvU",
@@ -228,7 +228,7 @@ Content-Type: [application/json; charset=utf-8]
       },
       "followers" : {
         "href" : null,
-        "total" : 5170
+        "total" : 5198
       },
       "genres" : [ ],
       "href" : "https://api.spotify.com/v1/artists/4L6i1I6tFpc1bKui5coGme",
