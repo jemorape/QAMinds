@@ -1,7 +1,7 @@
 Status: OK
-Time Taken: 187
+Time Taken: 162
 Size: 8224
-Timestamp: Mon Jul 02 17:09:20 CDT 2018
+Timestamp: Mon Jul 02 17:34:28 CDT 2018
 TestStep: Search
 
 ----------------- Messages ------------------------------
@@ -14,7 +14,7 @@ StatusCode: 200
 URL: https://api.spotify.com/v1/search?q=Gorillaz&type=artist&market=US&limit=10&offset=0
 
 ---------------- Request ---------------------------
-Authorization: [Bearer BQB1FeJuZBMabwOnllGJBxcTe9LMauHkO8L9bxR7gC2Wg8mD1bXVKzQHMtNdVYBjFPZOtSU8opc9qlMjzrg]
+Authorization: [Bearer BQCQ4ELMy5_rL6fYO2nQXshvOq4kGtdOONO2E0Dz0H7lFb1wfAP4HNyZHohqvcjWbVhD_1R50lnUp05WvS0]
 Connection: [Keep-Alive]
 User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
 Host: [api.spotify.com]
@@ -26,7 +26,7 @@ Alt-Svc: [clear]
 Access-Control-Allow-Origin: [*]
 Access-Control-Allow-Methods: [GET, POST, OPTIONS, PUT, DELETE, PATCH]
 Access-Control-Allow-Headers: [Accept, Authorization, Origin, Content-Type, Retry-After]
-Date: [Mon, 02 Jul 2018 22:09:20 GMT]
+Date: [Mon, 02 Jul 2018 22:34:28 GMT]
 Via: [1.1 google]
 Cache-Control: [public, max-age=7200]
 Access-Control-Allow-Credentials: [true]
@@ -44,7 +44,7 @@ Content-Type: [application/json; charset=utf-8]
       },
       "followers" : {
         "href" : null,
-        "total" : 3070549
+        "total" : 3071456
       },
       "genres" : [ "alternative hip hop", "art pop" ],
       "href" : "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ",
