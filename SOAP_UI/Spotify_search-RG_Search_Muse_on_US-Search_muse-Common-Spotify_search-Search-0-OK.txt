@@ -1,7 +1,7 @@
 Status: OK
-Time Taken: 153
+Time Taken: 152
 Size: 8715
-Timestamp: Mon Jul 02 17:40:35 CDT 2018
+Timestamp: Mon Jul 02 17:46:13 CDT 2018
 TestStep: Search
 
 ----------------- Messages ------------------------------
@@ -14,7 +14,7 @@ StatusCode: 200
 URL: https://api.spotify.com/v1/search?q=Muse&type=artist&market=US&limit=10&offset=0
 
 ---------------- Request ---------------------------
-Authorization: [Bearer BQAcVo0ULcRDjTJMFVn3IysfABkr46hLBa7MHS-QvzL6404Pb8FhE_s3duQk6OGrlc2UkzrFPnbmrzTIsV4]
+Authorization: [Bearer BQBaK9-eCFiUfnt-Desfa9Xm9GOacZ1Wr_0Pvw6brJlYLbrbvqXMKkp4QTPGUZlNE9xM7kPs-_fl1-rWkJk]
 Connection: [Keep-Alive]
 User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
 Host: [api.spotify.com]
@@ -26,7 +26,7 @@ Alt-Svc: [clear]
 Access-Control-Allow-Origin: [*]
 Access-Control-Allow-Methods: [GET, POST, OPTIONS, PUT, DELETE, PATCH]
 Access-Control-Allow-Headers: [Accept, Authorization, Origin, Content-Type, Retry-After]
-Date: [Mon, 02 Jul 2018 22:40:35 GMT]
+Date: [Mon, 02 Jul 2018 22:46:13 GMT]
 Via: [1.1 google]
 Cache-Control: [public, max-age=7200]
 Access-Control-Allow-Credentials: [true]
@@ -44,7 +44,7 @@ Content-Type: [application/json; charset=utf-8]
       },
       "followers" : {
         "href" : null,
-        "total" : 3941605
+        "total" : 3941853
       },
       "genres" : [ "modern rock", "permanent wave", "piano rock", "post-grunge", "rock" ],
       "href" : "https://api.spotify.com/v1/artists/12Chz98pHFMPJEknJQMWvI",

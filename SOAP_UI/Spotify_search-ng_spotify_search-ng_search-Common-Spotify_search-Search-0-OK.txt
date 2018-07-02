@@ -1,7 +1,7 @@
 Status: OK
-Time Taken: 130
+Time Taken: 152
 Size: 88
-Timestamp: Mon Jul 02 17:40:35 CDT 2018
+Timestamp: Mon Jul 02 17:46:13 CDT 2018
 TestStep: Search
 
 ----------------- Messages ------------------------------
@@ -14,7 +14,7 @@ StatusCode: 400
 URL: https://api.spotify.com/v1/search?q=art123&type=art123&market=US&limit=10&offset=0
 
 ---------------- Request ---------------------------
-Authorization: [Bearer BQAWNCI_rRP13AhlTmBhcBcWVa_wxN0wDW0ikJdUngHFZ9ntkCk-4-ar_7XEgyPF5IXuRDqchOpFmDOIQGw]
+Authorization: [Bearer BQDYzd6QNaodIEif7IZw7hCRTWyXMnnrnlZESFgUA7ar-_F4P-ufwb7VUoqPTK_BMaHTgkssZ3y6qX0cMTA]
 Connection: [Keep-Alive]
 User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
 Host: [api.spotify.com]
@@ -26,7 +26,7 @@ Alt-Svc: [clear]
 Access-Control-Allow-Origin: [*]
 Access-Control-Allow-Methods: [GET, POST, OPTIONS, PUT, DELETE, PATCH]
 Access-Control-Allow-Headers: [Accept, Authorization, Origin, Content-Type, Retry-After]
-Date: [Mon, 02 Jul 2018 22:40:35 GMT]
+Date: [Mon, 02 Jul 2018 22:46:13 GMT]
 Via: [1.1 google]
 Cache-Control: [private, max-age=0]
 Access-Control-Allow-Credentials: [true]

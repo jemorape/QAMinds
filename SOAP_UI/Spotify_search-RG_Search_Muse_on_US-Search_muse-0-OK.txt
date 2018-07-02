@@ -1,14 +1,14 @@
 Status: OK
-Time Taken: 986
+Time Taken: 967
 Size: 0
-Timestamp: Mon Jul 02 17:40:34 CDT 2018
+Timestamp: Mon Jul 02 17:46:12 CDT 2018
 TestStep: Search_muse
 
 ----------------- Messages ------------------------------
-request_token - OK - 714
-- request_token - OK - 441
-- transfer_token_to_tc - OK - 88
+request_token - OK - 693
+- request_token - OK - 448
+- transfer_token_to_tc - OK - 27
 - - Performed transfer [token]
-Search - OK - 153
-TransferContent - OK - 1
+Search - OK - 152
+TransferContent - OK - 2
 - Performed transfer [transferContent]
