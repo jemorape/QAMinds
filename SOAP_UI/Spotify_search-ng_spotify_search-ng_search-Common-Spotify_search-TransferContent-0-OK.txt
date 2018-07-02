@@ -1,0 +1,17 @@
+Status: OK
+Time Taken: 1
+Size: 0
+Timestamp: Mon Jul 02 17:38:13 CDT 2018
+TestStep: TransferContent
+
+----------------- Messages ------------------------------
+Performed transfer [transferContent]
+----------------------------------------------------
+transferContent transferred [[{
+  "error" : {
+    "status" : 400,
+    "message" : "Bad search type field art123"
+  }
+}]] from [Search.Response] to [#TestCase#.responseContent]
+------------ source path -------------
+

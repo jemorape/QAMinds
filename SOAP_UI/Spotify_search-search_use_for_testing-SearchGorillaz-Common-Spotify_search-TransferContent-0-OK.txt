@@ -1,0 +1,266 @@
+Status: OK
+Time Taken: 0
+Size: 0
+Timestamp: Mon Jul 02 17:38:13 CDT 2018
+TestStep: TransferContent
+
+----------------- Messages ------------------------------
+Performed transfer [transferContent]
+----------------------------------------------------
+transferContent transferred [[{
+  "artists" : {
+    "href" : "https://api.spotify.com/v1/search?query=Gorillaz&type=artist&market=US&offset=0&limit=10",
+    "items" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3AA28KZvwAUcZuOKwyblJQ"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 3071578
+      },
+      "genres" : [ "alternative hip hop", "art pop" ],
+      "href" : "https://api.spotify.com/v1/artists/3AA28KZvwAUcZuOKwyblJQ",
+      "id" : "3AA28KZvwAUcZuOKwyblJQ",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/fa3734a1c2e10634172434d45952da7bc1203bf0",
+        "width" : 640
+      }, {
+        "height" : 320,
+        "url" : "https://i.scdn.co/image/9bc913bf67b502baed6589d7984212a0e023918c",
+        "width" : 320
+      }, {
+        "height" : 160,
+        "url" : "https://i.scdn.co/image/8fcbb9905eaf86200fcc83687d48d36604350b98",
+        "width" : 160
+      } ],
+      "name" : "Gorillaz",
+      "popularity" : 82,
+      "type" : "artist",
+      "uri" : "spotify:artist:3AA28KZvwAUcZuOKwyblJQ"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/6PIDLFGrJZQfNSZB6lLVAs"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 116
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/6PIDLFGrJZQfNSZB6lLVAs",
+      "id" : "6PIDLFGrJZQfNSZB6lLVAs",
+      "images" : [ ],
+      "name" : "Gorillaz",
+      "popularity" : 9,
+      "type" : "artist",
+      "uri" : "spotify:artist:6PIDLFGrJZQfNSZB6lLVAs"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0AnzADJxsrc6Kgnv4AqwDw"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 312
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/0AnzADJxsrc6Kgnv4AqwDw",
+      "id" : "0AnzADJxsrc6Kgnv4AqwDw",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/5db561a7c08e70818084864be65a41416c35db87",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/767463b114a417943c62bb393139dd836e3bc529",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/68fdfe844839a51c6e164668316512076f13cf62",
+        "width" : 64
+      } ],
+      "name" : "Red Gorillaz",
+      "popularity" : 15,
+      "type" : "artist",
+      "uri" : "spotify:artist:0AnzADJxsrc6Kgnv4AqwDw"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3GkPA7jKwssNcCNF5tkYUf"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 445
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/3GkPA7jKwssNcCNF5tkYUf",
+      "id" : "3GkPA7jKwssNcCNF5tkYUf",
+      "images" : [ ],
+      "name" : "Gorillaz Featuring Daley",
+      "popularity" : 12,
+      "type" : "artist",
+      "uri" : "spotify:artist:3GkPA7jKwssNcCNF5tkYUf"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3hjp2GfGJGyjiplu9FPE1m"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 174
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/3hjp2GfGJGyjiplu9FPE1m",
+      "id" : "3hjp2GfGJGyjiplu9FPE1m",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/1df38d77ea82635a2d084761c3bd5208fd18d2f4",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/84d3dc4805d71b875b812f54ccf4b2b353d33dc3",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/da218f6d1717cd9545a62eea541824831ef05613",
+        "width" : 64
+      } ],
+      "name" : "Illa Gorillaz",
+      "popularity" : 1,
+      "type" : "artist",
+      "uri" : "spotify:artist:3hjp2GfGJGyjiplu9FPE1m"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/45WNgk9ahBlxT1cvT0rcH5"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 38
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/45WNgk9ahBlxT1cvT0rcH5",
+      "id" : "45WNgk9ahBlxT1cvT0rcH5",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/940a9ba1ff1336c065043e6054c740492c812216",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/b8b2cf02d9171042acce1897f303ebd99585d41f",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/5b5e4f2bb63925ad89de8a307f08b54a94c22268",
+        "width" : 64
+      } ],
+      "name" : "Untamed Gorillaz",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:45WNgk9ahBlxT1cvT0rcH5"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/13lvpAnM9chgENNOOvLECT"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 13
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/13lvpAnM9chgENNOOvLECT",
+      "id" : "13lvpAnM9chgENNOOvLECT",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/c8c7b0b23c88d22cd6904600f0e544b30bd68ce6",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/496a39c313f121b83091a6885824c7b3fb691c67",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/1027c0fde55af848d20989252f1d7e01506093a6",
+        "width" : 64
+      } ],
+      "name" : "Vanilla Gorillaz",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:13lvpAnM9chgENNOOvLECT"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/45ZlAYj33stOvxOBLlYDnK"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 11
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/45ZlAYj33stOvxOBLlYDnK",
+      "id" : "45ZlAYj33stOvxOBLlYDnK",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/35227b7a97e628e8524572786bda0cccb275e6b4",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/25bd8d7e049a509088429882507ef4564bc8c6e5",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/92b1b8e145384f249055647b4994346dc18b1f50",
+        "width" : 64
+      } ],
+      "name" : "Albino Gorillaz",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:45ZlAYj33stOvxOBLlYDnK"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4fjsFjUrcMsdHdobWU8BSh"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 20
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/4fjsFjUrcMsdHdobWU8BSh",
+      "id" : "4fjsFjUrcMsdHdobWU8BSh",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/92d220e5484ac30faff1f928430c70858df6dceb",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/316ce42ae609ca495f732fe1345afe50c36a5d49",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/98b52edefb0fb2e6b19914620d039cd6dfa47634",
+        "width" : 64
+      } ],
+      "name" : "Suluie Gorillaz",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:4fjsFjUrcMsdHdobWU8BSh"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4srvb5WHQsfDUaIkClivEY"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 3
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/4srvb5WHQsfDUaIkClivEY",
+      "id" : "4srvb5WHQsfDUaIkClivEY",
+      "images" : [ ],
+      "name" : "Pink Gorillaz",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:4srvb5WHQsfDUaIkClivEY"
+    } ],
+    "limit" : 10,
+    "next" : "https://api.spotify.com/v1/search?query=Gorillaz&type=artist&market=US&offset=10&limit=10",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 17
+  }
+}]] from [Search.Response] to [#TestCase#.responseContent]
+------------ source path -------------
+
