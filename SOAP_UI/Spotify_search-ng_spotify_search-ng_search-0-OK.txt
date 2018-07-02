@@ -1,14 +1,14 @@
 Status: OK
-Time Taken: 1088
+Time Taken: 870
 Size: 0
-Timestamp: Mon Jul 02 17:38:12 CDT 2018
+Timestamp: Mon Jul 02 17:40:34 CDT 2018
 TestStep: ng_search
 
 ----------------- Messages ------------------------------
-request_token - OK - 763
-- request_token - OK - 501
-- transfer_token_to_tc - OK - 17
+request_token - OK - 654
+- request_token - OK - 441
+- transfer_token_to_tc - OK - 29
 - - Performed transfer [token]
-Search - OK - 182
-TransferContent - OK - 1
+Search - OK - 130
+TransferContent - OK - 0
 - Performed transfer [transferContent]
