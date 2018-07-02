@@ -1,0 +1,13 @@
+Status: FAILED
+Time Taken: 900
+Size: 0
+Timestamp: Mon Jul 02 17:48:56 CDT 2018
+TestStep: ng_search
+
+----------------- Messages ------------------------------
+request_token - OK - 609
+- request_token - OK - 465
+- transfer_token_to_tc - OK - 13
+- - Performed transfer [token]
+Search - FAILED - 173
+- [Script Assertion] Invalid response status 400. Expression: (respStatus == 200). Values: respStatus = 400

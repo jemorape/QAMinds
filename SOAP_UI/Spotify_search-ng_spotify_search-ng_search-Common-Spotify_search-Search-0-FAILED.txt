@@ -1,10 +1,11 @@
-Status: OK
-Time Taken: 152
+Status: FAILED
+Time Taken: 173
 Size: 88
-Timestamp: Mon Jul 02 17:46:13 CDT 2018
+Timestamp: Mon Jul 02 17:48:57 CDT 2018
 TestStep: Search
 
 ----------------- Messages ------------------------------
+[Script Assertion] Invalid response status 400. Expression: (respStatus == 200). Values: respStatus = 400
 
 ----------------- Properties ------------------------------
 HTTP Version: HTTP/1.1
@@ -14,7 +15,7 @@ StatusCode: 400
 URL: https://api.spotify.com/v1/search?q=art123&type=art123&market=US&limit=10&offset=0
 
 ---------------- Request ---------------------------
-Authorization: [Bearer BQDYzd6QNaodIEif7IZw7hCRTWyXMnnrnlZESFgUA7ar-_F4P-ufwb7VUoqPTK_BMaHTgkssZ3y6qX0cMTA]
+Authorization: [Bearer BQDbNRFKZPXKhIlAqksRjB1t1cBbohnESYu_yBxacSwJUoaE1rxF_YEo1VwSzXdg1z6ZWyPqBYApuVtyfnw]
 Connection: [Keep-Alive]
 User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
 Host: [api.spotify.com]
@@ -26,7 +27,7 @@ Alt-Svc: [clear]
 Access-Control-Allow-Origin: [*]
 Access-Control-Allow-Methods: [GET, POST, OPTIONS, PUT, DELETE, PATCH]
 Access-Control-Allow-Headers: [Accept, Authorization, Origin, Content-Type, Retry-After]
-Date: [Mon, 02 Jul 2018 22:46:13 GMT]
+Date: [Mon, 02 Jul 2018 22:48:57 GMT]
 Via: [1.1 google]
 Cache-Control: [private, max-age=0]
 Access-Control-Allow-Credentials: [true]

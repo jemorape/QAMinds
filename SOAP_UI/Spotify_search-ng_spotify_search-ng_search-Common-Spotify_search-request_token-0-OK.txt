@@ -1,10 +1,10 @@
 Status: OK
-Time Taken: 684
+Time Taken: 609
 Size: 0
-Timestamp: Mon Jul 02 17:46:12 CDT 2018
+Timestamp: Mon Jul 02 17:48:56 CDT 2018
 TestStep: request_token
 
 ----------------- Messages ------------------------------
-request_token - OK - 450
-transfer_token_to_tc - OK - 29
+request_token - OK - 465
+transfer_token_to_tc - OK - 13
 - Performed transfer [token]

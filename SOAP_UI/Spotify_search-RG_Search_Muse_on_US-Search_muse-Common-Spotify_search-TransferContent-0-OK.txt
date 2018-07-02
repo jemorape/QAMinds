@@ -1,7 +1,7 @@
 Status: OK
-Time Taken: 2
+Time Taken: 1
 Size: 0
-Timestamp: Mon Jul 02 17:46:13 CDT 2018
+Timestamp: Mon Jul 02 17:48:57 CDT 2018
 TestStep: TransferContent
 
 ----------------- Messages ------------------------------
@@ -16,7 +16,7 @@ transferContent transferred [[{
       },
       "followers" : {
         "href" : null,
-        "total" : 3941853
+        "total" : 3941959
       },
       "genres" : [ "modern rock", "permanent wave", "piano rock", "post-grunge", "rock" ],
       "href" : "https://api.spotify.com/v1/artists/12Chz98pHFMPJEknJQMWvI",

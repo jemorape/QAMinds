@@ -1,14 +1,14 @@
 Status: OK
-Time Taken: 868
+Time Taken: 792
 Size: 0
-Timestamp: Mon Jul 02 17:46:12 CDT 2018
+Timestamp: Mon Jul 02 17:48:56 CDT 2018
 TestStep: SearchGorillaz
 
 ----------------- Messages ------------------------------
-request_token - OK - 611
-- request_token - OK - 440
-- transfer_token_to_tc - OK - 25
+request_token - OK - 435
+- request_token - OK - 323
+- transfer_token_to_tc - OK - 12
 - - Performed transfer [token]
-Search - OK - 162
+Search - OK - 147
 TransferContent - OK - 0
 - Performed transfer [transferContent]
